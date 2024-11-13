@@ -1,0 +1,87 @@
+DocAway 
+
+
+Pengguna:
+- User
+- Admin
+
+
+Frontend : HTML,CSS, JAVASCRIPT
+Backend : PHP
+Text Editor : Visual Studio Code
+Web Server : XAMPP
+
+
+== Database == 
+
+nama database : docaway
+
+table:
+
+
+-users 
+1. idusers
+2. namalengkap
+3. username
+4. password
+5. createdat
+
+
+
+-beranda:
+1.ID
+2.judul
+3.tanggal
+4.isiBerita
+
+
+-petunjuk:
+
+
+
+-footer:
+1.ID
+2.NIM		INT		20
+3.namalengkap	VARCHAR		100
+
+
+
+-appointment:
+1.id
+2.iddokter (foreignkey ke table dokter)
+3.nama
+4.nomorhp
+5.email
+6.tanggal_app
+7.keterangan
+
+
+
+
+
+
+-dokter
+1.iddokter    int   (11)  not null auto increment primary key
+2.namadokter             	VARCHAR		100
+3.spesialisasi			VARCHAR		50
+4,kualifikasi			VARCHAR		255
+5.foto				VARCHAR		50
+6.jadwalkonsultasi
+7.rumahsakit         enum  (0)   Cengild Medical Centre, AlTY orthopedic hospital, Sunway Medical Centre
+8.createdat         timestamp (0)  current_timestamp
+
+
+
+
+
+
+=== fitur === 
+1.Customer:  - Liat tampilan home
+	     - Membuat Appointment
+	     - Lihat daftar dokter
+
+2. Admin:	-Login
+		-Beranda
+		-Create , Read, Update, Delete
+		-Lihat daftar appointment
+		-

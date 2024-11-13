@@ -1,0 +1,387 @@
+:root {
+  --primary: #42855b;
+  --sec: #99f3bd;
+  --soft: #d2f6c5;
+  --text: #f6f7d4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f9f1f0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.atas {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/concentrated-woman-stretching-her-arms-with-sky-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  padding: 5rem;
+}
+
+.banner .logo {
+  width: 240px;
+  background-color: #c7e9b0;
+  box-shadow: 10px 10px 15px 15px #2e4e3a;
+  border-radius: 13%;
+}
+
+.banner .logo img {
+  width: 100%;
+}
+
+.judul {
+  margin-left: 7rem;
+}
+
+.judul h1 {
+  margin-bottom: 1rem;
+  font-size: 8rem;
+  color: #2e4e3a;
+  text-decoration: wavy;
+}
+
+.judul h3 {
+  font-size: 28px;
+  color: #2e4e3a;
+}
+
+.jelajah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  background-color: #42855b;
+  border-bottom: 1px solid #d7e6d3;
+  left: 0;
+  right: 0;
+}
+
+.jelajah .menu-jelajah {
+  margin: 0 auto;
+}
+
+.jelajah .menu-jelajah a {
+  color: var(--text);
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: "Silkscreen", cursive;
+  margin: 0 1rem;
+}
+
+.jelajah .menu-jelajah a:hover {
+  color: var(--soft);
+}
+
+.jelajah .menu-jelajah a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--sec);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.jelajah .menu-jelajah a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.beranda-konten {
+  padding: 60px 0;
+}
+
+.beranda-kontainer {
+  width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 15px 15px 15px 15px #d7e6d3;
+  border-radius: 5%;
+}
+
+.title {
+  font-weight: bold;
+  padding: 7px 4px;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.title h2 {
+  text-align: center;
+  padding-top: 3%;
+}
+
+.isi {
+  margin-bottom: 1.5rem;
+  padding: 5px;
+}
+
+.isi h3,
+.isi h5,
+.isi p {
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.tambah-dokter-con {
+  max-width: 700px;
+  margin: 5rem auto;
+  padding: 5%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px 15px #2e4e3a;
+}
+.tambah-dokter-con h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  background-color: #42855b;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #2e603a;
+}
+.error {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+/* ADMIN- TAMPILKAN DATA DOKTERRRRRRRR */
+.kont-dokter {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h3 {
+  color: #42855b;
+  margin-top: 0;
+}
+
+.kartu-dokter {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.kartu-dokter img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.kartu-dokter .dokter-info {
+  flex-grow: 1;
+}
+
+.kartu-dokter h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #42855b;
+}
+
+.kartu-dokter p {
+  margin: 0;
+  color: #777777;
+}
+
+.konten-dokter {
+  padding: 60px 0;
+  width: 100%;
+}
+.cont-dokter {
+  width: 1360px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 15px 15px 15px 15px #d7e6d3;
+}
+.card {
+  background-color: #80a889be;
+}
+.page-title {
+  margin-bottom: 10px;
+  font-family: "Silkscreen", cursive;
+  padding: 3%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.table thead th,
+.table tbody td {
+  border: 3px solid #2e4e3a;
+  padding: 3px;
+}
+.btn {
+  border: 1px solid;
+  padding: 3px 8px;
+  display: inline-block;
+  background-color: #2e4e3a;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.input-group {
+  margin-bottom: 8px;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.input-control {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.btn-submit {
+  border: 1px solid #67595e;
+  padding: 8px 20px;
+  display: inline-block;
+  background-color: #67595e;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn-back {
+  border: 1px solid;
+  padding: 8px 20px;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* petunjuk */
+.petunjuk-konten {
+  padding: 60px 0;
+}
+
+.petunjuk-kontainer {
+  width: 1560px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 15px 15px 15px 15px #d7e6d3;
+  border-radius: 5%;
+}
+
+.petunjuk-kontainer h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #2e4e3a;
+  font-family: "Silkscreen", cursive;
+}
+
+.petunjuk-kartu {
+  padding: 60px 0;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.petunjuk-kartu .pc-1 {
+  width: 300px;
+  margin-bottom: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 15px 15px 15px 15px #d7e6d3;
+  border-radius: 3%;
+}
+
+.pc-1 img {
+  margin: 0.5rem auto;
+}
+
+.pc-1 p {
+  text-align: center;
+  padding: 3%;
+}
+
+/*  FOOTERRRRRRRRR    */
+
+.footer {
+  background-color: #42855b;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .column {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer .column h4 {
+  margin-bottom: 10px;
+}
+
+.footer .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .column ul li {
+  margin-bottom: 5px;
+}
